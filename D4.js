@@ -87,13 +87,32 @@ console.log("Risultato", esercizio5);
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 6");
+
+function check3and7(numero) {
+  if ((numero >= 0 && numero % 3 === 0) || numero % 7 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+const esercizio6 = check3and7(1);
+console.log(esercizio6);
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 7");
+function reverseString(str) {
+  let splitString = str.split("");
+  let reverseArray = splitString.reverse();
+  let joinArray = reverseArray.join("");
+  return joinArray;
+}
+const esercizio7 = reverseString("EPICODE");
+console.log(esercizio7);
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
@@ -107,10 +126,26 @@ console.log("Risultato", esercizio5);
  della stringa originale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 9");
+
+function cutString(stringa) {
+  return stringa.slice(1, -1);
+}
+const esercizio9 = cutString("epicode");
+console.log(esercizio9);
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 9");
+
+function giveMeRandom(num9) {
+  let array = [];
+  for (let index = 0; index < num9; index++) {
+    array.push(Math.floor(Math.random() * 10));
+  }
+  return array;
+}
+const esercizio10 = giveMeRandom(3);
+console.log(esercizio10);
