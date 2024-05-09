@@ -4,11 +4,11 @@
 console.log("Esercizio 1");
 
 const area = function area(l1, l2) {
-  const resoult = l1 * l2;
-  return resoult;
+  const result = l1 * l2;
+  return result;
 };
-const resoult = area(5, 3);
-console.log("Area rettangolo", resoult);
+const result = area(5, 3);
+console.log("Area rettangolo", result);
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -54,14 +54,14 @@ console.log("Esercizio 4");
 
 function boundary(num4) {
   if (num4 >= 20 && num4 <= 100) {
-    return "true";
+    return true;
   } else if (num4 === 400) {
     return "uguale a 400";
   } else {
     return "Non è compreso tra 20 e 100 e non è nemmeno 400";
   }
 }
-const esercizio4 = boundary(10);
+const esercizio4 = boundary(30);
 console.log("Risultato", esercizio4);
 
 /* ESERCIZIO 5
@@ -70,7 +70,17 @@ console.log("Risultato", esercizio4);
  ritornare la stringa originale senza alterarla.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 5");
+
+function epify(stringa) {
+  if (stringa.startsWith("Epicode")) {
+    return stringa;
+  } else {
+    return "Epicode " + stringa;
+  }
+}
+const esercizio5 = epify("Mirko");
+console.log("Risultato", esercizio5);
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
