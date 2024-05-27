@@ -119,8 +119,12 @@ console.log(esercizio7);
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 8");
 
+function upperFirst(stringa) {
+  return stringa.charAt(0).toUpperCase() + stringa.slice(1);
+}
+console.log(upperFirst("epicode"));
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
