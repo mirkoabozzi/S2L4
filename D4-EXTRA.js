@@ -177,8 +177,16 @@ console.log(longest(arrayString));
  Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", e torna un valore booleano.
  La funzione deve ritornare true se "emailContent" non contiene le parole "SPAM" o "SCAM".
 */
+console.log("Esercizio 9");
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const antiSpam = (emailContent) => {
+  if (emailContent.toUpperCase().includes("SPAM") || emailContent.toUpperCase().includes("SCAM")) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(antiSpam("ciao spam"));
 
 /* EXTRA 10
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
