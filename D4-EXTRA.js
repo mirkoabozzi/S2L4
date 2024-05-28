@@ -116,20 +116,44 @@ console.log(maxShoppingCart(shoppingCart));
  Crea una funzione chiamata "latestShoppingCart" che riceve l'array "shoppingCart" e ritorna l'ultimo elemento.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 5");
+
+const latestShoppingCart = (array) => array[array.length - 1];
+
+console.log(latestShoppingCart(shoppingCart));
 
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 6 da rivedere");
+
+const loopUntil = (num) => {
+  const random = Math.floor(Math.random() * 10);
+  num = random;
+  return num;
+};
+
+console.log(loopUntil(1));
 
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 7");
+let arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const average = (array) => {
+  let sum = 0;
+  array.forEach((element) => {
+    if (element === "number") {
+    }
+    sum += element / array.length;
+  });
+  return sum;
+};
+
+console.log(average(arrayNumber));
 
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
