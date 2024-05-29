@@ -127,15 +127,22 @@ console.log(latestShoppingCart(shoppingCart));
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
 */
 
-console.log("Esercizio 6 da rivedere");
-
+console.log("Esercizio 6");
+const arrayLoop = [];
+console.log(arrayLoop.length);
 const loopUntil = (num) => {
-  const random = Math.floor(Math.random() * 10);
-  num = random;
-  return num;
+  while (arrayLoop.length < 3) {
+    const random = Math.floor(Math.random() * 10);
+
+    if (num === random) {
+      arrayLoop.push(random);
+    }
+    console.log(random);
+  }
 };
 
-console.log(loopUntil(1));
+loopUntil(5);
+console.log(arrayLoop);
 
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
@@ -192,7 +199,8 @@ console.log(antiSpam("ciao spam"));
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 10");
+const data = (data) => {};
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come parametri due numeri interi, "x" e "y".
@@ -202,4 +210,6 @@ console.log(antiSpam("ciao spam"));
  "10","11","12"]
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Esercizio 11");
+
+const matrixGenerator = (num1, num2) => {};
